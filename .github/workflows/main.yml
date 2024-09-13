@@ -1,24 +1,24 @@
-            - name: Setup Node.js environment
-  uses: actions/setup-node@v4.0.3
-  with:
-    # Set always-auth in npmrc.
-    always-auth: # optional, default is false
-    # Version Spec of the version to use. Examples: 12.x, 10.15.1, >=10.15.0.
-    node-version: # optional
-    # File containing the version Spec of the version to use.  Examples: package.json, .nvmrc, .node-version, .tool-versions.
-    node-version-file: # optional
-    # Target architecture for Node to use. Examples: x86, x64. Will use system architecture by default.
-    architecture: # optional
-    # Set this option if you want the action to check for the latest available version that satisfies the version spec.
-    check-latest: # optional
-    # Optional registry to set up for auth. Will set the registry in a project level .npmrc and .yarnrc file, and set up auth to read in from env.NODE_AUTH_TOKEN.
-    registry-url: # optional
-    # Optional scope for authenticating against scoped registries. Will fall back to the repository owner when using the GitHub Packages registry (https://npm.pkg.github.com/).
-    scope: # optional
-    # Used to pull node distributions from node-versions. Since there's a default, this is typically not supplied by the user. When running this action on github.com, the default value is sufficient. When running on GHES, you can pass a personal access token for github.com if you are experiencing rate limiting.
-    token: # optional, default is ${{ github.server_url == 'https://github.com' && github.token || '' }}
-    # Used to specify a package manager for caching in the default directory. Supported values: npm, yarn, pnpm.
-    cache: # optional
-    # Used to specify the path to a dependency file: package-lock.json, yarn.lock, etc. Supports wildcards or a list of file names for caching multiple dependencies.
-    cache-dependency-path: # optional
-          
+ -名称 :设置Node.js环境
+使用 :行动/设置节点@v4.0.3
+具有 :
+#在npmrc中设置always-auth。
+始终验证 :#可选，默认值为false
+# Version Spec of the version to use. Examples: 12.x, 10.15.1, >=10.15.0.
+节点-版本 :#可选
+#包含要使用的版本的版本规范的文件。示例：package.json、.nvmrc、.node-version、.tool-versions。
+节点-版本文件 :#可选
+#节点要使用的目标体系结构。示例：x86、x64。默认情况下将使用系统架构。
+建筑学 :#可选
+#如果希望操作检查满足版本规范的最新可用版本，请设置此选项。
+检查最新 :#可选
+#为身份验证设置的可选注册表。将在项目级.npmrc和.yarnrc文件中设置注册表，并设置auth以从env读取。节点_自动_标记。
+注册表url :#可选
+#用于根据作用域注册表进行身份验证的可选作用域。使用GitHub包注册表时，将返回到存储库所有者(https://npm.pkg.github.com/).
+范围 :#可选
+#用于从节点版本中提取节点分布。由于存在默认值，因此通常不由用户提供。在github.com上运行此操作时，默认值就足够了。在GHES上运行时，如果遇到速率限制，可以为github.com传递个人访问令牌。
+代币 :# optional, default is ${{ github.server_url == 'https://github.com' && github.token || '' }}
+#用于指定用于在默认目录中缓存的包管理器。支持的值：npm、yarn、pnpm。
+隐藏物 :#可选
+#用于指定依赖项文件的路径：package-lock.json、yarn.lock等。支持通配符或文件名列表以缓存多个依赖项。
+缓存依赖路径 :#可选
+
